@@ -1,2 +1,2 @@
-You have to download two files， then run disk-age.py in Python. You will get a picture showing cluster-averaged alpha distribution and alpha-age relation. 
-If you want to get the age at any alpha in the alpha range, you can input alpha in 'Age_negative' function.
+After downloading the disk-age.py file, you can import disk-age.Age module.
+Input an alpha value or alpha array or alpha list, you can get the corresponding disk age result.
