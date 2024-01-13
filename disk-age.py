@@ -60,8 +60,7 @@ ax2.set_ylabel(u"-Age(Myr)",fontsize=15)
 ax2.tick_params(axis='both',labelsize=15,colors='k')
 ax2.minorticks_on()
 ax2.vlines(x=-2,ymin=-3.1,ymax=0,colors="gray", ls="--", lw=1, )
-#ax2.legend(fontsize=15)
-#plt.savefig('alpha-age.png',bbox_inches = 'tight')
+plt.savefig('alpha-age.png',bbox_inches = 'tight')
 plt.show()
 
 
