@@ -3,7 +3,7 @@
 """
 Age(alpha) is a function that calculates disk evolutionary age based on the cluster-averaged alpha histogram.
 The function cites Class II lifetime of 2Myr.
-Input: an alpha value, or alpha array, or alpha list (alpha rannge: -2~4.8).
+Input: an alpha value, or alpha array, or alpha list (alpha range: -2~4.8).
 Output: the corresponding disk ages (unit: Myr).
 """
 
