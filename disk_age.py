@@ -6,7 +6,7 @@ This module provides the function Age(alpha) to calculate evolutionary age of a 
 N.B.: You need to install scipy first.
 
 Please use it in python by 
-    import * from disk-age
+    import * from disk_age
     
 Input: 
     alpha: float or array of float, the IR SED slope alpha; defaults to 0.0. It must be in the range: -2.0 ~ 4.8. Otherwise, the edge value of this range that is closest to the input value will be forced and a warning will be issued.
