@@ -1,5 +1,5 @@
 Usage: This module provides the function Age(alpha) to calculate evolutionary age of a protoplanetary disk from its infrared (IR) SED slope alpha, according to the work of Liu et al. (2024). 
-       After downloading the module, use help('disk_age') to get more information.
+After downloading the module, use help('disk_age') to get more information.
 
 An example:
   from disk_age import Age
