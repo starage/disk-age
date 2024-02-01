@@ -5,4 +5,4 @@ An example:
   from disk_age import Age
   help('disk_age')
   alpha_array = np.linspace(-2,4,500)
-  Age_array = Age(alpha_test_2024)
+  Age_array = Age(alpha_array)
