@@ -29,7 +29,7 @@ def Age(alpha=0.0):
     alpha_max = 4.814672904812319 #The value is the max alpha in alpha histogram.
     
     # evaluate the disk age(s):
-    if type(alpha) in [int, float]:
+    if isinstance(alpha, (int, float) ):
         if alpha<-2: print(f'\n\033[31mWarning! Too small input alpha value ({alpha}) is forced to the allowed lower limit of -2.\033[0m\n')
         elif alpha>4.8: print(f'\n\033[31mWarning! Too large input alpha value ({alpha}) is forced to the allowed upper limit of 4.8.\033[0m\n')
         alpha=min(max(alpha,-2),4.8)
