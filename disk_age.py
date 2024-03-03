@@ -112,7 +112,7 @@ dict_fig["L24_std_model_fig5"] = data_array_fig[37]
 dict_fig["L24_average_error_model_fig5"] = data_array_fig[38]
 
 # Fig.5 (third and fourth columns)
-dict_fig["L_a_fig5"] = data_array_fig[39] # Y axis value of luminosity in Fig.5 (third and fourth columns)
+dict_fig["L_a_fig5"] = data_array_fig[39] # Y axis value of luminosity in Fig.5 (the Y-coordinate grid of all the panels in the right two columns is the same)
 
 dict_fig["a_vs_L3.6_average_fig5"] = data_array_fig[40] # The average of parameter 'a' in each 3.6 um luminosity bin
 dict_fig["a_vs_L3.6_average_error_fig5"] = data_array_fig[41] # The error of average of parameter 'a' in each 3.6 um luminosity bin
