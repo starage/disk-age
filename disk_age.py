@@ -13,7 +13,7 @@ This module provides the function Age(alpha) to calculate evolutionary age of a 
 N.B.: You need to install scipy first.
 
 Please use it in python by 
-    import * from disk-age
+    from disk_age import *
     
 Input: 
     alpha: float or array of float, the IR SED slope alpha; defaults to 0.0. It must be in the range: -2.0 ~ 4.8. Otherwise, the edge value of this range that is closest to the input value will be forced and a warning will be issued.
@@ -47,14 +47,14 @@ def Age(alpha=0.0):
     return Age
 
 
-# Input the data of Fig.2 and Fig.5
+# Input the data of Fig.3 and Fig.5
 data_array_fig = []
 with open('data_fig.txt') as f:
     for line1 in f:
         data_list = line1.split()
         data_array = [float(i) for i in data_list]
         data_array_fig.append(data_array)
-# Create a new dictionary
+# Create a new dictionary to store data of Fig.3 and Fig.5
 dict_fig = {}
 # Add data to dictionary
 # Fig.3
@@ -69,7 +69,7 @@ dict_fig["a_average_error_model_fig3"] = data_array_fig[6]
 dict_fig["a_std_model_fig3"] = data_array_fig[7]
 
 # Fig.5 (first and second columns)
-dict_fig["alpha_L_fig5"] = data_array_fig[8] # X axis value of alpha in Fig.5 (first and second column)
+dict_fig["alpha_L_fig5"] = data_array_fig[8] # X axis value of alpha in Fig.5 (the X-coordinate grid of all the panels in the left two columns is the same)
 
 dict_fig["L3.6_average_fig5"] = data_array_fig[9] # The average of 3.6um luminosity in each alpha bin
 dict_fig["L3.6_std_fig5"] = data_array_fig[10] # The standard deviation of 3.6um luminosity in each alpha bin
@@ -112,7 +112,7 @@ dict_fig["L24_std_model_fig5"] = data_array_fig[37]
 dict_fig["L24_average_error_model_fig5"] = data_array_fig[38]
 
 # Fig.5 (third and fourth columns)
-dict_fig["L_a_fig5"] = data_array_fig[39] # Y axis value of luminosity in Fig.5 (third and fourth columns)
+dict_fig["L_a_fig5"] = data_array_fig[39] # Y axis value of luminosity in Fig.5 (the Y-coordinate grid of all the graphs in the right two columns is the same)
 
 dict_fig["a3.6_average_fig5"] = data_array_fig[40] # The average of parameter 'a' in each 3.6 um luminosity bin
 dict_fig["a3.6_average_error_fig5"] = data_array_fig[41] # The error of average of parameter 'a' in each 3.6 um luminosity bin
