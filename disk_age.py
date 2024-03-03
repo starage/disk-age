@@ -112,44 +112,44 @@ dict_fig["L24_std_model_fig5"] = data_array_fig[37]
 dict_fig["L24_average_error_model_fig5"] = data_array_fig[38]
 
 # Fig.5 (third and fourth columns)
-dict_fig["L_a_fig5"] = data_array_fig[39] # Y axis value of luminosity in Fig.5 (the Y-coordinate grid of all the graphs in the right two columns is the same)
+dict_fig["L_a_fig5"] = data_array_fig[39] # Y axis value of luminosity in Fig.5 (third and fourth columns)
 
-dict_fig["a3.6_average_fig5"] = data_array_fig[40] # The average of parameter 'a' in each 3.6 um luminosity bin
-dict_fig["a3.6_average_error_fig5"] = data_array_fig[41] # The error of average of parameter 'a' in each 3.6 um luminosity bin
-dict_fig["a3.6_std_fig5"] = data_array_fig[42] # The standard deviation of parameter 'a' in each 3.6 um luminosity bin
+dict_fig["a_vs_L3.6_average_fig5"] = data_array_fig[40] # The average of parameter 'a' in each 3.6 um luminosity bin
+dict_fig["a_vs_L3.6_average_error_fig5"] = data_array_fig[41] # The error of average of parameter 'a' in each 3.6 um luminosity bin
+dict_fig["a_vs_L3.6_std_fig5"] = data_array_fig[42] # The standard deviation of parameter 'a' in each 3.6 um luminosity bin
 
-dict_fig["a4.5_average_fig5"] = data_array_fig[43] # 4.5um
-dict_fig["a4.5_average_error_fig5"] = data_array_fig[44]
-dict_fig["a4.5_std_fig5"] = data_array_fig[45]
+dict_fig["a_vs_L4.5_average_fig5"] = data_array_fig[43] # 4.5um
+dict_fig["a_vs_L4.5_average_error_fig5"] = data_array_fig[44]
+dict_fig["a_vs_L4.5_std_fig5"] = data_array_fig[45]
 
-dict_fig["a5.8_average_fig5"] = data_array_fig[46] # 5.8um
-dict_fig["a5.8_average_error_fig5"] = data_array_fig[47]
-dict_fig["a5.8_std_fig5"] = data_array_fig[48]
+dict_fig["a_vs_L5.8_average_fig5"] = data_array_fig[46] # 5.8um
+dict_fig["a_vs_L5.8_average_error_fig5"] = data_array_fig[47]
+dict_fig["a_vs_L5.8_std_fig5"] = data_array_fig[48]
 
-dict_fig["a8_average_fig5"] = data_array_fig[49] # 8um
-dict_fig["a8_average_error_fig5"] = data_array_fig[50]
-dict_fig["a8_std_fig5"] = data_array_fig[51]
+dict_fig["a_vs_L8_average_fig5"] = data_array_fig[49] # 8um
+dict_fig["a_vs_L8_average_error_fig5"] = data_array_fig[50]
+dict_fig["a_vs_L8_std_fig5"] = data_array_fig[51]
 
-dict_fig["a24_average_fig5"] = data_array_fig[52] # 24um
-dict_fig["a24_average_error_fig5"] = data_array_fig[53]
-dict_fig["a24_std_fig5"] = data_array_fig[54]
+dict_fig["a_vs_L24_average_fig5"] = data_array_fig[52] # 24um
+dict_fig["a_vs_L24_average_error_fig5"] = data_array_fig[53]
+dict_fig["a_vs_L24_std_fig5"] = data_array_fig[54]
 
-dict_fig["a3.6_average_model_fig5"] = data_array_fig[55] # for 200710 models
-dict_fig["a3.6_average_error_model_fig5"] = data_array_fig[56]
-dict_fig["a3.6_std_model_fig5"] = data_array_fig[57]
+dict_fig["a_vs_L3.6_average_model_fig5"] = data_array_fig[55] # for 200710 models
+dict_fig["a_vs_L3.6_average_error_model_fig5"] = data_array_fig[56]
+dict_fig["a_vs_L3.6_std_model_fig5"] = data_array_fig[57]
 
-dict_fig["a4.5_average_model_fig5"] = data_array_fig[58]
-dict_fig["a4.5_average_error_model_fig5"] = data_array_fig[59]
-dict_fig["a4.5_std_model_fig5"] = data_array_fig[60]
+dict_fig["a_vs_L4.5_average_model_fig5"] = data_array_fig[58]
+dict_fig["a_vs_L4.5_average_error_model_fig5"] = data_array_fig[59]
+dict_fig["a_vs_L4.5_std_model_fig5"] = data_array_fig[60]
 
-dict_fig["a5.8_average_model_fig5"] = data_array_fig[61]
-dict_fig["a5.8_average_error_model_fig5"] = data_array_fig[62]
-dict_fig["a5.8_std_model_fig5"] = data_array_fig[63]
+dict_fig["a_vs_L5.8_average_model_fig5"] = data_array_fig[61]
+dict_fig["a_vs_L5.8_average_error_model_fig5"] = data_array_fig[62]
+dict_fig["a_vs_L5.8_std_model_fig5"] = data_array_fig[63]
 
-dict_fig["a8_average_model_fig5"] = data_array_fig[64]
-dict_fig["a8_average_error_model_fig5"] = data_array_fig[65]
-dict_fig["a8_std_model_fig5"] = data_array_fig[66]
+dict_fig["a_vs_L8_average_model_fig5"] = data_array_fig[64]
+dict_fig["a_vs_L8_average_error_model_fig5"] = data_array_fig[65]
+dict_fig["a_vs_L8_std_model_fig5"] = data_array_fig[66]
 
-dict_fig["a24_average_model_fig5"] = data_array_fig[67]
-dict_fig["a24_average_error_model_fig5"] = data_array_fig[68]
-dict_fig["a24_std_model_fig5"] = data_array_fig[69]
+dict_fig["a_vs_L24_average_model_fig5"] = data_array_fig[67]
+dict_fig["a_vs_L24_average_error_model_fig5"] = data_array_fig[68]
+dict_fig["a_vs_L24_std_model_fig5"] = data_array_fig[69]
