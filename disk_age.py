@@ -5,7 +5,7 @@ Created on Sat Mar  2 23:09:18 2024
 
 @author: mac
 
-This module provides the function Age(alpha) to calculate evolutionary age of a protoplanetary disk from its infrared (IR) SED slope alpha, according to the work of TBA. 
+This module provides the function Age(alpha) to calculate the evolutionary age of a protoplanetary disk from its infrared (IR) SED slope alpha. It also provides the data of the new relationships among the luminosity, IR SED slope and SED concavity in the dictionary 'dict_fig' for Fig 3 and Fig 5 in the work of TBA.
 
 N.B.: You need to install scipy first.
 
