@@ -7,6 +7,6 @@ An example:
   import numpy as np  
   help('disk_age')  
   alpha_array = np.linspace(-2,4.8,100)  
-  Age_array = Age(alpha_array)  
+  Age_list = Age(alpha_array)  
 
 The data for Fig 3 and Fig 5 is stored in the dictionary 'dict_fig'.
