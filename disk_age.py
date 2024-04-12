@@ -5,7 +5,7 @@ Created on Sat Mar  2 23:09:18 2024
 
 @author: mac
 
-This module provides the function Age(alpha) to calculate the evolutionary age of a protoplanetary disk from its infrared (IR) SED slope alpha. It also provides the data of the new relationships among the luminosity, IR SED slope and SED concavity in the dictionary 'dict_fig' for Fig 3 and Fig 5 in the work of TBA.
+This module provides the function Age(alpha) to calculate the evolutionary age of a protoplanetary disk from its infrared (IR) SED slope alpha. It also provides the data of the new relationships among the luminosity, IR SED slope and SED concavity in the dictionary 'dict_fig' for Fig.2 and Fig.B.1 in the work of TBA.
 
 N.B.: You need to install scipy first.
 
@@ -44,109 +44,109 @@ def Age(alpha=0.0):
     return Age
 
 
-# Input the data of Fig.3 and Fig.5
+# Input the data of Fig.2 and Fig.B.1
 data_array_fig = []
 with open('data_fig.txt') as f:
     for line1 in f:
         data_list = line1.split()
         data_array = [float(i) for i in data_list]
         data_array_fig.append(data_array)
-# Create a new dictionary to store data of Fig.3 and Fig.5
+# Create a new dictionary to store data of Fig.2 and Fig.B.1
 dict_fig = {}
 # Add data to dictionary
-# Fig.3
-dict_fig["alpha_fig3"] = data_array_fig[0] # X axis value of alpha in Fig.3
-dict_fig["a_average_fig3"] = data_array_fig[1] # The average of paramneter a in each alpha bin
-dict_fig["a_average_error_fig3"] = data_array_fig[2] # The error of average of paramneter a in each alpha bin
-dict_fig["a_std_fig3"] = data_array_fig[3] # The standard deviation of paramneter a in each alpha bin
+# Fig.2
+dict_fig["alpha_fig"] = data_array_fig[0] # X axis value of alpha in Fig.2
+dict_fig["a_average_fig"] = data_array_fig[1] # The average of paramneter a in each alpha bin
+dict_fig["a_average_error_fig"] = data_array_fig[2] # The error of average of paramneter a in each alpha bin
+dict_fig["a_std_fig"] = data_array_fig[3] # The standard deviation of paramneter a in each alpha bin
 
-dict_fig["alpha_model_fig3"] = data_array_fig[4] # for 200710 models
-dict_fig["a_average_model_fig3"] = data_array_fig[5]
-dict_fig["a_average_error_model_fig3"] = data_array_fig[6]
-dict_fig["a_std_model_fig3"] = data_array_fig[7]
+dict_fig["alpha_model_fig"] = data_array_fig[4] # for 200710 models
+dict_fig["a_average_model_fig"] = data_array_fig[5]
+dict_fig["a_average_error_model_fig"] = data_array_fig[6]
+dict_fig["a_std_model_fig"] = data_array_fig[7]
 
-# Fig.5 (first and second columns)
-dict_fig["alpha_L_fig5"] = data_array_fig[8] # X axis value of alpha in Fig.5 (the X-coordinate grid of all the panels in the left two columns is the same)
+# Fig.B.1 (first and second columns)
+dict_fig["alpha_L_fig"] = data_array_fig[8] # X axis value of alpha in Fig.B.1 (the X-coordinate grid of all the panels in the left two columns is the same)
 
-dict_fig["L3.6_average_fig5"] = data_array_fig[9] # The average of 3.6um luminosity in each alpha bin
-dict_fig["L3.6_std_fig5"] = data_array_fig[10] # The standard deviation of 3.6um luminosity in each alpha bin
-dict_fig["L3.6_average_error_fig5"] = data_array_fig[11] # The error of average of 3.6um luminosity in each alpha bin
+dict_fig["L3.6_average_fig"] = data_array_fig[9] # The average of 3.6um luminosity in each alpha bin
+dict_fig["L3.6_std_fig"] = data_array_fig[10] # The standard deviation of 3.6um luminosity in each alpha bin
+dict_fig["L3.6_average_error_fig"] = data_array_fig[11] # The error of average of 3.6um luminosity in each alpha bin
 
-dict_fig["L4.5_average_fig5"] = data_array_fig[12] # 4.5um
-dict_fig["L4.5_std_fig5"] = data_array_fig[13]
-dict_fig["L4.5_average_error_fig5"] = data_array_fig[14]
+dict_fig["L4.5_average_fig"] = data_array_fig[12] # 4.5um
+dict_fig["L4.5_std_fig"] = data_array_fig[13]
+dict_fig["L4.5_average_error_fig"] = data_array_fig[14]
 
-dict_fig["L5.8_average_fig5"] = data_array_fig[15] # 5.8um
-dict_fig["L5.8_std_fig5"] = data_array_fig[16]
-dict_fig["L5.8_average_error_fig5"] = data_array_fig[17]
+dict_fig["L5.8_average_fig"] = data_array_fig[15] # 5.8um
+dict_fig["L5.8_std_fig"] = data_array_fig[16]
+dict_fig["L5.8_average_error_fig"] = data_array_fig[17]
 
-dict_fig["L8_average_fig5"] = data_array_fig[18] #8um
-dict_fig["L8_std_fig5"] = data_array_fig[19]
-dict_fig["L8_average_error_fig5"] = data_array_fig[20]
+dict_fig["L8_average_fig"] = data_array_fig[18] #8um
+dict_fig["L8_std_fig"] = data_array_fig[19]
+dict_fig["L8_average_error_fig"] = data_array_fig[20]
 
-dict_fig["L24_average_fig5"] = data_array_fig[21] #24um
-dict_fig["L24_std_fig5"] = data_array_fig[22]
-dict_fig["L24_average_error_fig5"] = data_array_fig[23]
+dict_fig["L24_average_fig"] = data_array_fig[21] #24um
+dict_fig["L24_std_fig"] = data_array_fig[22]
+dict_fig["L24_average_error_fig"] = data_array_fig[23]
 
-dict_fig["L3.6_average_model_fig5"] = data_array_fig[24] #for 200710 models
-dict_fig["L3.6_std_model_fig5"] = data_array_fig[25]
-dict_fig["L3.6_average_error_model_fig5"] = data_array_fig[26]
+dict_fig["L3.6_average_model_fig"] = data_array_fig[24] #for 200710 models
+dict_fig["L3.6_std_model_fig"] = data_array_fig[25]
+dict_fig["L3.6_average_error_model_fig"] = data_array_fig[26]
 
-dict_fig["L4.5_average_model_fig5"] = data_array_fig[27]
-dict_fig["L4.5_std_model_fig5"] = data_array_fig[28]
-dict_fig["L4.5_average_error_model_fig5"] = data_array_fig[29]
+dict_fig["L4.5_average_model_fig"] = data_array_fig[27]
+dict_fig["L4.5_std_model_fig"] = data_array_fig[28]
+dict_fig["L4.5_average_error_model_fig"] = data_array_fig[29]
 
-dict_fig["L5.8_average_model_fig5"] = data_array_fig[30]
-dict_fig["L5.8_std_model_fig5"] = data_array_fig[31]
-dict_fig["L5.8_average_error_model_fig5"] = data_array_fig[32]
+dict_fig["L5.8_average_model_fig"] = data_array_fig[30]
+dict_fig["L5.8_std_model_fig"] = data_array_fig[31]
+dict_fig["L5.8_average_error_model_fig"] = data_array_fig[32]
 
-dict_fig["L8_average_model_fig5"] = data_array_fig[33]
-dict_fig["L8_std_model_fig5"] = data_array_fig[34]
-dict_fig["L8_average_error_model_fig5"] = data_array_fig[35]
+dict_fig["L8_average_model_fig"] = data_array_fig[33]
+dict_fig["L8_std_model_fig"] = data_array_fig[34]
+dict_fig["L8_average_error_model_fig"] = data_array_fig[35]
 
-dict_fig["L24_average_model_fig5"] = data_array_fig[36]
-dict_fig["L24_std_model_fig5"] = data_array_fig[37]
-dict_fig["L24_average_error_model_fig5"] = data_array_fig[38]
+dict_fig["L24_average_model_fig"] = data_array_fig[36]
+dict_fig["L24_std_model_fig"] = data_array_fig[37]
+dict_fig["L24_average_error_model_fig"] = data_array_fig[38]
 
-# Fig.5 (third and fourth columns)
-dict_fig["L_a_fig5"] = data_array_fig[39] # Y axis value of luminosity in Fig.5 (the Y-coordinate grid of all the panels in the right two columns is the same)
+# Fig.B.1 (third and fourth columns)
+dict_fig["L_a_fig"] = data_array_fig[39] # Y axis value of luminosity in Fig.B.1 (the Y-coordinate grid of all the panels in the right two columns is the same)
 
-dict_fig["a_vs_L3.6_average_fig5"] = data_array_fig[40] # The average of parameter 'a' in each 3.6 um luminosity bin
-dict_fig["a_vs_L3.6_average_error_fig5"] = data_array_fig[41] # The error of average of parameter 'a' in each 3.6 um luminosity bin
-dict_fig["a_vs_L3.6_std_fig5"] = data_array_fig[42] # The standard deviation of parameter 'a' in each 3.6 um luminosity bin
+dict_fig["a_vs_L3.6_average_fig"] = data_array_fig[40] # The average of parameter 'a' in each 3.6 um luminosity bin
+dict_fig["a_vs_L3.6_average_error_fig"] = data_array_fig[41] # The error of average of parameter 'a' in each 3.6 um luminosity bin
+dict_fig["a_vs_L3.6_std_fig"] = data_array_fig[42] # The standard deviation of parameter 'a' in each 3.6 um luminosity bin
 
-dict_fig["a_vs_L4.5_average_fig5"] = data_array_fig[43] # 4.5um
-dict_fig["a_vs_L4.5_average_error_fig5"] = data_array_fig[44]
-dict_fig["a_vs_L4.5_std_fig5"] = data_array_fig[45]
+dict_fig["a_vs_L4.5_average_fig"] = data_array_fig[43] # 4.5um
+dict_fig["a_vs_L4.5_average_error_fig"] = data_array_fig[44]
+dict_fig["a_vs_L4.5_std_fig"] = data_array_fig[45]
 
-dict_fig["a_vs_L5.8_average_fig5"] = data_array_fig[46] # 5.8um
-dict_fig["a_vs_L5.8_average_error_fig5"] = data_array_fig[47]
-dict_fig["a_vs_L5.8_std_fig5"] = data_array_fig[48]
+dict_fig["a_vs_L5.8_average_fig"] = data_array_fig[46] # 5.8um
+dict_fig["a_vs_L5.8_average_error_fig"] = data_array_fig[47]
+dict_fig["a_vs_L5.8_std_fig"] = data_array_fig[48]
 
-dict_fig["a_vs_L8_average_fig5"] = data_array_fig[49] # 8um
-dict_fig["a_vs_L8_average_error_fig5"] = data_array_fig[50]
-dict_fig["a_vs_L8_std_fig5"] = data_array_fig[51]
+dict_fig["a_vs_L8_average_fig"] = data_array_fig[49] # 8um
+dict_fig["a_vs_L8_average_error_fig"] = data_array_fig[50]
+dict_fig["a_vs_L8_std_fig"] = data_array_fig[51]
 
-dict_fig["a_vs_L24_average_fig5"] = data_array_fig[52] # 24um
-dict_fig["a_vs_L24_average_error_fig5"] = data_array_fig[53]
-dict_fig["a_vs_L24_std_fig5"] = data_array_fig[54]
+dict_fig["a_vs_L24_average_fig"] = data_array_fig[52] # 24um
+dict_fig["a_vs_L24_average_error_fig"] = data_array_fig[53]
+dict_fig["a_vs_L24_std_fig"] = data_array_fig[54]
 
-dict_fig["a_vs_L3.6_average_model_fig5"] = data_array_fig[55] # for 200710 models
-dict_fig["a_vs_L3.6_average_error_model_fig5"] = data_array_fig[56]
-dict_fig["a_vs_L3.6_std_model_fig5"] = data_array_fig[57]
+dict_fig["a_vs_L3.6_average_model_fig"] = data_array_fig[55] # for 200710 models
+dict_fig["a_vs_L3.6_average_error_model_fig"] = data_array_fig[56]
+dict_fig["a_vs_L3.6_std_model_fig"] = data_array_fig[57]
 
-dict_fig["a_vs_L4.5_average_model_fig5"] = data_array_fig[58]
-dict_fig["a_vs_L4.5_average_error_model_fig5"] = data_array_fig[59]
-dict_fig["a_vs_L4.5_std_model_fig5"] = data_array_fig[60]
+dict_fig["a_vs_L4.5_average_model_fig"] = data_array_fig[58]
+dict_fig["a_vs_L4.5_average_error_model_fig"] = data_array_fig[59]
+dict_fig["a_vs_L4.5_std_model_fig"] = data_array_fig[60]
 
-dict_fig["a_vs_L5.8_average_model_fig5"] = data_array_fig[61]
-dict_fig["a_vs_L5.8_average_error_model_fig5"] = data_array_fig[62]
-dict_fig["a_vs_L5.8_std_model_fig5"] = data_array_fig[63]
+dict_fig["a_vs_L5.8_average_model_fig"] = data_array_fig[61]
+dict_fig["a_vs_L5.8_average_error_model_fig"] = data_array_fig[62]
+dict_fig["a_vs_L5.8_std_model_fig"] = data_array_fig[63]
 
-dict_fig["a_vs_L8_average_model_fig5"] = data_array_fig[64]
-dict_fig["a_vs_L8_average_error_model_fig5"] = data_array_fig[65]
-dict_fig["a_vs_L8_std_model_fig5"] = data_array_fig[66]
+dict_fig["a_vs_L8_average_model_fig"] = data_array_fig[64]
+dict_fig["a_vs_L8_average_error_model_fig"] = data_array_fig[65]
+dict_fig["a_vs_L8_std_model_fig"] = data_array_fig[66]
 
-dict_fig["a_vs_L24_average_model_fig5"] = data_array_fig[67]
-dict_fig["a_vs_L24_average_error_model_fig5"] = data_array_fig[68]
-dict_fig["a_vs_L24_std_model_fig5"] = data_array_fig[69]
+dict_fig["a_vs_L24_average_model_fig"] = data_array_fig[67]
+dict_fig["a_vs_L24_average_error_model_fig"] = data_array_fig[68]
+dict_fig["a_vs_L24_std_model_fig"] = data_array_fig[69]
