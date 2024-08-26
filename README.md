@@ -13,6 +13,9 @@ The data for Fig.2 and Fig.B1 is stored in the dictionary 'dict_fig'.
 
 Please cite our following papers if your research has benefitted from these data curves:
 First discovery of the α-disk age conversion relation:
+
 [Liu et al. 2023ApJ...943...39L](https://ui.adsabs.harvard.edu/abs/2023ApJ...943...39L/abstract)
+
 An update to the α-disk age conversion relation and the luminosity, α, SED concavity correlations:
+
 [Liu et al. 2024RAA....24g5001L](https://ui.adsabs.harvard.edu/abs/2024RAA....24g5001L/abstract)
